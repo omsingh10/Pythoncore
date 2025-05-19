@@ -4,7 +4,7 @@ c = int(input("Enter a number: "))
 
 if a==7:
     n = b*c
-    print(n)
+    print(n) 
 elif b==7:
     print(c)
 elif c==7:
@@ -12,3 +12,4 @@ elif c==7:
 else:
     k=a*b*c
     print(k)
+    
