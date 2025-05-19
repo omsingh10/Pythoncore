@@ -31,14 +31,20 @@ def circle():
     area = math.pi * r ** 2
     print("The area of the circle is", area)
 
+def Days_to_years():
+    days = int(input("Enter the number of days: "))
+    years = days / 365
+    print("The number of years is", years)
+
 print("Choose an operation:")
 print("1. Perimeter of rectangle")
 print("2. Area of triangle")
 print("3. Simple interest")
 print("4. Compound interest")
 print("5. Area of circle")
+print("6. Days to years")
 
-choice = int(input("Enter your choice (1-5): "))
+choice = int(input("Enter your choice (1-6): "))
 
 match choice:
     case 1:
@@ -51,5 +57,7 @@ match choice:
         cinterest()
     case 5:
         circle()
+    case 6:
+        Days_to_years()
     case _:
         print("Invalid choice.")
