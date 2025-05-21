@@ -1,8 +1,5 @@
-num = 156
-copy = num
-rev = 0
-while copy != 0:
-    digit = copy % 10
-    rev = rev * 10 + digit
-    copy //= 10
-print(rev)
+a=[1, 3, 3, 4, 5]
+# b = []
+# for i in a:
+#     b.append(i**2)
+# print(b)
