@@ -1,4 +1,1 @@
-if y[i] == "PM":
-            y[i] = "12"
-        else:
-            y[i] = "00"
+Print(isinstance(jimmty, Dog))  # True
