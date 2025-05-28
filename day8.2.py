@@ -5,12 +5,12 @@ class Queue:
     def __init__(self,max_size):
 
         self.__max_size=max_size
-        self._elements=[None]*self._max_size
+        self._elements=[None]*self.__max_size
         self.__rear=-1
         self.__front=0
 
     def is_full(self):
-        if(self._rear==self._max_size-1):
+        if(self.__rear==self.__max_size-1):
                 return True
         return False
 
@@ -24,7 +24,7 @@ class Queue:
             print("Queue is full!!!")
         else:
             self.__rear+=1
-            self._elements[self._rear]=data
+            self._elements[self.__rear]=data
 
     def dequeue(self):
         if(self.is_empty()):
@@ -35,8 +35,8 @@ class Queue:
             return data
 
     def display(self):
-        for index in range(self._front, self._rear+1):
-            print(self.__elements[index])
+        for index in range(self.__front, self.__rear+1):
+            print(self._elements[index])
 
 
     def get_max_size(self):
